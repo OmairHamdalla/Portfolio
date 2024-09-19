@@ -1323,7 +1323,7 @@ input, select, textarea {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
 		color: #777777;
-		font-size: 20pt;
+		font-size: 1.3em;
 		line-height: 1.75em;
 	}
 
@@ -1408,8 +1408,8 @@ input, select, textarea {
 	hr {
 		border: 0;
 		border-top: solid 1px #ddd;
-		padding: 1.5em 0 0 0;
-		margin: 1.75em 0 0 0;
+		padding: 1em 0 0 0;
+		margin: 0 0 0 0;
 	}
 
 	sub {
@@ -1429,7 +1429,7 @@ input, select, textarea {
 	}
 
 	p, ul, ol, dl, table, blockquote, form {
-		margin-bottom: 2em;
+		margin-bottom: 1.5em;
 	}
 
 /* Table */
@@ -2236,6 +2236,7 @@ input, select, textarea {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 10px;
+	margin-bottom: 10%;
     background-color: black;
     color: white;
     border-radius: 5px;
@@ -2293,7 +2294,7 @@ ul {
   .example-2 .icon-content:hover .tooltip {
 	opacity: 1;
 	visibility: visible;
-	top: 1rem;
+	top: -3rem;
   }
   .example-2 .icon-content a {
 	position: relative;
@@ -2368,6 +2369,16 @@ ul {
         text-align: center;
     }
 
+	.example-2 {
+		justify-content: center;
+	  }
+
+	  .example-2 {
+		display:flex;
+		justify-content: center;
+		align-items: center;
+	  }
+
     .profile-image {
         margin-bottom: 20px;
 		display: block;
@@ -2382,9 +2393,16 @@ ul {
         z-index: -1; /* Ensures the circle stays in position */
     }
 
-    .info {
-        margin-left: 0;
+    .about {
+		display: grid;
+		justify-content: center;
+		align-items: center;
     }
+	
+	.info{
+		margin-left: 0;
+	}
+
 }
 
 
@@ -2396,7 +2414,7 @@ ul {
 
 .slider {
     display: flex;
-    aspect-ratio: 16 / 12;
+    aspect-ratio: 16 / 10;
     overflow-x: auto;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
@@ -2436,4 +2454,43 @@ ul {
 
 .slider-nav a:hover {
     opacity: 1;
+}
+
+.project-card {
+	padding: 10px;
+}
+
+.bottom-tag {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 1em 0 0 20px;
+	margin: 0px;
+	width: 100%;
+}
+
+.left-tag {
+	display: flex;
+	line-height: 1.5rem;
+	flex-direction: column;
+}
+
+.skills {
+	font-size: 1rem;
+	font-style: italic;
+}
+
+.languages {
+	font-size: 1rem;
+	font-style: italic;
+}
+
+.date {
+	font-size: 12px;
+	color: grey;
+}
+
+.divider {
+    height: 2px; /* Keep it thin overall */
+
 }
