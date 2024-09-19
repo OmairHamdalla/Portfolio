@@ -2407,7 +2407,9 @@ ul {
 
 
 .slider-wrapper {
+	overflow: hidden;
     position:relative;
+	width: 100%;
     max-width: 70rem;
     margin: 0 auto;
 }
@@ -2415,7 +2417,7 @@ ul {
 .slider {
     display: flex;
     aspect-ratio: 16 / 10;
-    overflow-x: auto;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     border-radius: 0.5rem;
@@ -2448,12 +2450,12 @@ ul {
     height: 0.5rem;
     border-radius: 50%;
     background-color: #00000080;
-    opacity: 0.75;
+    opacity: 0.5;
     transition: opacity ease 250ms;
 }
 
 .slider-nav a:hover {
-    opacity: 1;
+    opacity: 100%;
 }
 
 .project-card {
