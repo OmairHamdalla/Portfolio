@@ -206,30 +206,6 @@
 })(jQuery);
 
 document.addEventListener('DOMContentLoaded', () => {
-    const sliders = document.querySelectorAll('.slider');
-    let intervals = {};
-
-    // Function to switch to the next slide
-    function switchSlide(sliderId) {
-        const slider = document.getElementById(sliderId);
-        const firstChild = slider.firstElementChild;
-        slider.append(firstChild); // Move first image to the end
-    }
-
-    // Add hover event listeners for each slider
-    sliders.forEach((slider, index) => {
-        const sliderId = slider.id;
-        
-        slider.addEventListener('mouseenter', () => {
-            intervals[sliderId] = setInterval(() => {
-                switchSlide(sliderId);
-            }, 5000); // Switch image every 5 seconds
-        });
-
-        slider.addEventListener('mouseleave', () => {
-            clearInterval(intervals[sliderId]); // Stop switching when the mouse leaves
-        });
-    });
 
     const navLinks = document.querySelectorAll('.slider-nav a');
     
@@ -246,4 +222,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
+	
 });

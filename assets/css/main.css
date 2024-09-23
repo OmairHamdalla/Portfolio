@@ -2449,13 +2449,16 @@ ul {
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
-    background-color: #00000080;
-    opacity: 0.5;
+    background-color: #81818180;
+    opacity: 0.8;
     transition: opacity ease 250ms;
 }
 
 .slider-nav a:hover {
     opacity: 100%;
+	background-color: #dadada;
+	width: 0.6rem;
+    height: 0.6rem;
 }
 
 .project-card {
