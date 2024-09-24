@@ -2209,6 +2209,23 @@ input, select, textarea {
     overflow: hidden;
 }
 
+.skills{
+	padding: 0px 0px 0px 1rem;
+}
+
+.additional-section h3 {
+    font-size: 1rem;
+}
+
+.additional-section p {
+    font-size: 1rem;
+    line-height: 1; /* This reduces the space between lines */
+    margin: 0;      /* This removes any additional space from margins */
+}
+
+.small-br{
+	height: 7px;
+}
 
 .info {
 	align-items: center;
