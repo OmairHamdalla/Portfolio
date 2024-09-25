@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
-@import url("fontawesome-all.min.css");
+/* @import url("fontawesome-all.min.css"); */
+/* @import url('/font-awesome-4.6.3/css/font-awesome.min.css'); */
 
 
 html, body, div, span, applet, object,
@@ -2227,6 +2228,10 @@ input, select, textarea {
 	margin-bottom: 1rem;
 }
 
+.skills i{ 
+	margin-right: 0.4rem;
+}
+
 
 .info {
 	align-items: center;
@@ -2293,7 +2298,6 @@ ul {
 	align-items: center;
   }
   .example-2 .icon-content {
-	margin: 10 10px;
 	position: relative;
   }
   .example-2 .icon-content .tooltip {
