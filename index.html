@@ -548,15 +548,17 @@
 								<header>
 									<h2>Contact Me</h2>
 								</header>
-								<form action="https://formspree.io/f/xnnaezep" method="POST">
+								<form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+									<input type="hidden" name="redirect" value="https://omairhamdalla.github.io/Portfolio/submitted.html">
+								
+									<input type="hidden" name="access_key" value="52127510-beb5-40f1-a9d2-fdfa36213bab" />
 									<div>
-										<input type="hidden" name="_next" value="https://omairhamdalla.github.io/Portfolio/">
 										<div class="row">
 											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
+												<input type="text" name="name" placeholder="Name" required/>
 											</div>
 											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
+												<input type="text" name="email" placeholder="Email" required/>
 											</div>
 											<div class="col-12">
 												<input type="text" name="subject" placeholder="Subject" />
