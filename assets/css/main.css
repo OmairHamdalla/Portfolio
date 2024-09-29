@@ -2009,7 +2009,7 @@ input, select, textarea {
 						position: absolute;
 						top: 0;
 						left: 0;
-						background: url("images/overlay.png");
+						background: url("images/..overlay.png");
 						width: 100%;
 						height: 100%;
 						z-index: 1;
@@ -2673,3 +2673,70 @@ ul {
     height: 0.6rem;
 }
 
+
+
+.thanks{
+	display:flex; /* Enables flexbox layout */
+    align-items: center; /* Vertically center arrow and text */
+	padding: 4em 0;
+	padding-left: 2rem;
+	justify-content: flex-start;
+}
+
+.thanks-arrow{
+	margin-left: 1em;
+	margin: 2em;
+	margin-right: 5rem;
+	display: flex;
+}
+
+.thanks-text{
+	margin: 0 1rem;
+	line-height: normal;
+}
+
+.thanks button {
+	/* padding: 17px 40px; */
+	padding: 1rem 2rem;
+	border-radius: 50px;
+	cursor: pointer;
+	border: 0;
+	background-color: rgba(0, 0, 0, 0.144);
+	box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	font-size: 15px;
+	transition: all 0.5s ease;	
+  }
+  
+  .thanks button:hover {
+	letter-spacing: 3px;
+	background-color: hsl(150, 58%, 40%);
+	color: #ffffff;
+	box-shadow: rgb(13, 44, 20) 0px 7px 20px 0px;
+  }
+  
+  .thanks button:active {
+	letter-spacing: 3px;
+	background-color: hsla(125, 32%, 49%, 0.555);
+	color: #ffffff;
+	transform: translateY(0.2em);
+	transition: 100ms;
+  }
+  
+
+@media (max-width: 736px) {
+    .thanks {
+		padding: 3rem 0;
+    }
+
+	.thanks h1{
+		font-weight: 550;
+	}
+
+	.thanks-arrow{
+		margin: 0 1em;
+	}
+	
+	
+}
