@@ -2300,6 +2300,7 @@ input, select, textarea {
     text-align: right; /* Align text to the right */
 }
 
+
 .job-title {
     font-size: 1.2rem; 
 	line-height: 1.5;
@@ -2332,18 +2333,29 @@ input, select, textarea {
 	margin: 0px 0px 0px 0px;
 }
 
+
+.panel p{
+	line-height: normal;
+	margin: 0;
+}
+
+
 .project-card {
-	padding: 10px;
+	padding: 2rem;
+}
+
+.project-card a{
+	color: #363636;
 }
 
 .project-card p{
 	margin-left: 1em;
-	font-size: 1.2rem;
+	font-size: 1em;
 	line-height: 1.6;
 }
 
 .project-card h2{
-	font-size: 1.8rem;
+	font-size: 1.7rem;
 	font-weight: 600;
 }
 
@@ -2589,6 +2601,8 @@ ul {
 		width: 50%;;
     }
 
+	
+
     .about {
 		display: grid;
 		justify-content: center;
@@ -2600,19 +2614,15 @@ ul {
 	}
 
 	.project-card h2{
-		font-size: 2.2rem;
+		font-size: 1.5rem;
 		margin: 0.3em 0 1em 0px;
 	}
 
+
 	.project-description p{
-		font-size: 1.2rem;
+		font-size: 1rem;
 
 	}
-
-
-
-
-
 
 
 }
@@ -2726,6 +2736,11 @@ ul {
   
 
 @media (max-width: 736px) {
+	.slider-wrapper{
+		width: 75%;
+	}
+
+
     .thanks {
 		padding: 3rem 0;
     }
